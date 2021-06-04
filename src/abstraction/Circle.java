@@ -1,14 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package abstraction;
+//sub class
 
-/**
- *
- * @author Hettihewa
- */
-public class Circle {
-    
+public class Circle extends Shape {
+
+    int radius;
+
+    @Override
+    public int getArea() {
+        //convert int - casting
+        return (int) (3.14 * radius * radius);
+
+    }
 }

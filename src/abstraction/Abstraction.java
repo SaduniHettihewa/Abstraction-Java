@@ -1,21 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package abstraction;
 
-/**
- *
- * @author Hettihewa
- */
 public class Abstraction {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        //create objects
+        Rectangle re = new Rectangle();
+        Circle ci = new Circle();
+        re.height = 10;
+        re.length = 7;
+        System.out.println("Rectangle Area is : - " + re.getArea());
+
+        System.out.println(".......................");
+
+        ci.radius = 7;
+        System.out.println("Circle Area is : - " + ci.getArea());
+
     }
-    
+
 }
